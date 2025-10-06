@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Events — SARIGAMA BHARATHI</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --brand-dark: #3e0f17;
+      --brand-accent: #ffd6a5;
+      --bg-gradient: radial-gradient(circle at top, #f9d4bc, #fbd4db, #cbb0f1);
+    }
+
+    body {
+      background: var(--bg-gradient);
+      font-family: 'Oxygen', sans-serif;
+      color: #2c1b13;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* Navbar */
+    .navbar-dark {
+      background: linear-gradient(to right, #5e2129, #3e0f17);
+      border-bottom: 2px solid #f6d365;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .navbar-brand h1 {
+      font-family: 'Lora', serif;
+      font-size: 1.125rem;
+      margin: 0;
+      letter-spacing: .06em;
+      color: var(--brand-accent);
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .brand-text p {
+      margin: 0;
+      font-size: .85rem;
+      color: #cbbccf;
+    }
+
+    #logo-img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    /* Event Card Styles */
+    .event-card {
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+      border-radius: 12px;
+      overflow: hidden;
+      border: none;
+      background: linear-gradient(to bottom, #fff8f3, #fffaf9);
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    }
+
+    .event-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Make event images responsive */
+    .event-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    /* For smaller screens, reduce image height */
+    @media (max-width: 768px) {
+      .event-card img {
+        height: 120px;
+        object-fit: cover;
+      }
+
+      .event-card .card-body {
+        padding: 0.75rem;
+      }
+
+      .navbar-brand h1 {
+        font-size: 1rem;
+      }
+
+      .masthead h1 {
+        font-size: 1.5rem;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .event-card img {
+        height: 90px;
+      }
+    }
+
+    .masthead {
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    .masthead h1 {
+      font-family: 'Lora', serif;
+      font-weight: 700;
+      color: #5e2129;
+    }
+
+    .masthead p {
+      font-style: italic;
+      color: #6e4b4b;
+    }
+
+    /* Footer */
+    footer {
+      background: #311b0b;
+      color: #f8f1e3;
+      padding: 2rem 0;
+    }
+
+    footer a {
+      color: #ffe5b4;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img id="logo-img" src="images/logo.jpg" alt="Sarigama Bharathi logo">
+      <div class="brand-text">
+        <h1>SARIGAMA BHARATHI®</h1>
+        <p>School of Music, Udupi</p>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navEvents">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navEvents">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="menu-categories.html">About</a></li>
+        <li class="nav-item"><a class="nav-link active" href="single-category.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@SarigamaBharathiUdupi" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="container" style="margin-bottom: 15px;">
+  <header class="masthead text-center">
+    <h1 class="display-6">Special Events & Workshops</h1>
+    <p class="lead">"Music is enough for life, but life isn't enough for music."</p>
+  </header>
+
+  <div class="row g-4">
+    <!-- Event Template -->
+    <!-- Repeat the following block for each event -->
+    <div class="col-md-6 col-lg-6">
+      <div class="card event-card h-100">
+        <div class="row g-0">
+          <div class="col-sm-5">
+            <img src="images/logo.jpg" alt="Event 1">
+          </div>
+          <div class="col-sm-7">
+            <div class="card-body">
+              <h5 class="card-title">2001 Music Camp</h5>
+              <p class="card-text small text-muted">June 2001 • Fee: ₹2001</p>
+              <p class="card-text">Structured lessons, group rehearsals, and a final performance for family and friends.</p>
+              <a href="#" class="btn btn-sm btn-primary">Learn more</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 2 -->
+    <div class="col-md-6 col-lg-6">
+      <div class="card event-card h-100">
+        <div class="row g-0">
+          <div class="col-sm-5">
+            <img src="images/logo.jpg" alt="Beginner Workshop">
+          </div>
+          <div class="col-sm-7">
+            <div class="card-body">
+              <h5 class="card-title">Beginner Workshop</h5>
+              <p class="card-text small text-muted">July • Fee: ₹1500</p>
+              <p class="card-text">An introductory workshop ideal for students starting their music journey.</p>
+              <a href="#" class="btn btn-sm btn-primary">Reserve seat</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 3 -->
+    <div class="col-md-6 col-lg-6">
+      <div class="card event-card h-100">
+        <div class="row g-0">
+          <div class="col-sm-5">
+            <img src="images/logo.jpg" alt="Annual Concert">
+          </div>
+          <div class="col-sm-7">
+            <div class="card-body">
+              <h5 class="card-title">Annual Student Concert</h5>
+              <p class="card-text small text-muted">December • Free Entry</p>
+              <p class="card-text">A showcase of student talent — vocals, instruments and group performances.</p>
+              <a href="#" class="btn btn-sm btn-primary">View details</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Event 4 -->
+    <div class="col-md-6 col-lg-6">
+      <div class="card event-card h-100">
+        <div class="row g-0">
+          <div class="col-sm-5">
+            <img src="images/logo.jpg" alt="Veda Classes">
+          </div>
+          <div class="col-sm-7">
+            <div class="card-body">
+              <h5 class="card-title">Weekly Veda Classes</h5>
+              <p class="card-text small text-muted">Ongoing • Free for all</p>
+              <p class="card-text">Traditional Vedic chanting sessions held twice a week for the past 14+ years.</p>
+              <a href="#" class="btn btn-sm btn-primary">Join now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-3 text-center text-md-start">
+      <div class="col-md-4">
+        <h6 class="text-uppercase ">Hours</h6>
+        <p class="mb-0">Sun–Thu: 11:15am — 10:00pm<br>Fri: 11:15am — 2:30pm<br>Sat: Closed</p>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="text-uppercase ">Address</h6>
+        <address class="mb-0">No 1-169 G(9), 80 Badagabettu<br>Parkala, Udupi — 576107<br><strong>Dr. H. N. Udaya Shankar</strong></address>
+      </div>
+
+      <div class="col-md-4">
+        <h6 class="text-uppercase ">Connect</h6>
+        <p class="mb-1"><a href="https://www.youtube.com/@SarigamaBharathiUdupi" target="_blank">YouTube Channel</a></p>
+        <p class="mb-0">Phone: <a href="tel:+919663369365">+91 96633 69365</a></p>
+      </div>
+    </div>
+
+    <div class="text-center mt-4 small ">&copy; Sarigama Bharathi 2025</div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

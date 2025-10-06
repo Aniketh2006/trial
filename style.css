@@ -1,0 +1,200 @@
+* {
+  padding: 0;
+  margin: 0;
+
+}
+
+header {
+  position: sticky;
+  top: 0;
+  background-color: #333;
+  color: white;
+  text-align: center;
+  z-index: 1000;
+}
+
+nav {
+  height: 20vh;
+  width: 100;
+  background: linear-gradient(to right, #FF8C00, #FFA500, #FFB347, #FFDAB9, #FFFFFF);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.rigth ul li {
+  list-style: none;
+  padding-top: 20px;
+
+}
+
+.imgg {
+  margin-top: 30px;
+  padding-bottom: 1px;
+
+}
+
+.name {
+  font-size: 30px;
+  font-family: "Cinzel", serif;
+  font-weight: 600;
+  font-style: bold;
+  display: flex;
+  color: black;
+  justify-content: flex-start;
+
+}
+
+.namer {
+  font-size: 18px;
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: bold;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 39px;
+  margin-left: -15px;
+}
+
+.thick-hr {
+  height: 3px;
+  background-color: black;
+  border: none;
+}
+/* videobackgorund */
+.video-background {
+  position: relative;
+  width: 100%;
+  height: 75vh; 
+  overflow: hidden;
+}
+
+.video-background video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: translate(-50%, -50%);
+  z-index: -1; 
+}
+
+/* From here  About starts*/
+
+.about {
+  display: flex;
+  height: 80vh;
+}
+
+.left,
+.right {
+  flex: 1;
+  height: 100%;
+}
+
+.left {
+  background-image: url('about.avif');
+  background-size: cover;
+  background-position: center;
+  filter: brightness(60%);
+}
+
+.right {
+  background-image: url('aboutright.avif');
+  background-size: cover;
+  background-position: center;
+}
+
+.abouttext {
+  margin: 15%;
+  text-align: center;
+  font-family: "Niconne", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/* Quick words on sarigam bharathi */
+
+
+/* .slideshow {
+  width: 100%;
+  height: 300px;
+  overflow: hidden;
+  position: relative;
+  border: 2px solid #333;
+} */
+
+/* .profile-box {
+  margin-bottom: -410%;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: #fff;
+  position: absolute;
+  top: 100%; /* Initially position the slides off-screen */
+  /* display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  transition: transform 1s ease; /* Use transform for smooth sliding */
+
+
+  .slideshow-container {
+    width: 100%;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .slide {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+  
+  .slide.active {
+    opacity: 1;
+  }
+  
+  /* .nav-buttons {
+    position: absolute;
+    top: 50%;
+     width: 100%
+    height: 350px;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+  }
+  
+  .nav-buttons button {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+  }
+   */
+  .slide img {
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  
+  .slide h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+  }
+  
+  .slide p {
+    margin: 5%;
+    color: #555;
+    font-size: 0.9em;
+  }
+  
+  

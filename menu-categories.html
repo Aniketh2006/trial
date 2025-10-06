@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>About — SARIGAMA BHARATHI</title>
+
+  <!-- Bootstrap & Fonts -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Oxygen:wght@300;400;700&family=Noto+Sans+Kannada:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+
+  <style>
+    :root {
+      --brand: #4b2e83;
+      --muted: #6c757d;
+    }
+
+    body {
+      background: linear-gradient(to bottom, #f8eee7, #fae0e4);
+      font-family: 'Oxygen', sans-serif;
+      color: #2c1b13;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    main {
+      flex: 1;
+    }
+
+    /* Navbar */
+    .navbar-dark {
+      background: linear-gradient(to right, #5e2129, #3e0f17);
+      border-bottom: 2px solid #f6d365;
+    }
+
+    .navbar-brand {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .navbar-brand h1 {
+      font-family: 'Lora', serif;
+      font-size: 1.125rem;
+      margin: 0;
+      letter-spacing: .06em;
+      color: #ffd6a5;
+      text-shadow: 1px 1px 2px #000;
+    }
+
+    .brand-text p {
+      margin: 0;
+      font-size: .85rem;
+      color: var(--muted);
+    }
+
+    #logo-img {
+      width: 64px;
+      height: 64px;
+      object-fit: cover;
+      border-radius: 8px;
+    }
+
+    .program-card, .card {
+      transition: transform 0.18s ease, box-shadow 0.18s ease;
+    }
+
+    .program-card:hover,
+    .card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+    }
+
+    /* Philosophy Background */
+    .bg-philosophy {
+      background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        url('images/about.avif') no-repeat center center;
+      background-size: cover;
+      border-radius: 12px;
+      color: white;
+      padding: 1.5rem;
+    }
+
+    .bg-philosophy h3,
+    .bg-philosophy h4 {
+      color: #ffeecf;
+    }
+
+    .bg-philosophy ul {
+      padding-left: 1.5rem;
+    }
+
+    .bg-philosophy li::marker {
+      color: #ffc107;
+    }
+
+    /* Teacher Bio */
+    .teacher-bio ul {
+      padding-left: 1.5rem;
+      font-size: 1.05rem;
+    }
+
+    .teacher-bio ul li {
+      margin-bottom: 0.5rem;
+      line-height: 1.6;
+    }
+
+    .teacher-bio h4, .teacher-bio h5 {
+      font-family: 'Lora', serif;
+    }
+
+    /* Cards */
+    .card.program-card {
+      background: linear-gradient(to bottom, #fffaf5, #fffdf9);
+      border-left: 4px solid #d88a62;
+      border-radius: 10px;
+    }
+
+    /* Quote Box */
+    .quote-box {
+      background-color: #fff5ea;
+      border-left: 4px solid #a0522d;
+      padding: 1rem;
+      border-radius: 6px;
+      font-family: 'Noto Sans Kannada', sans-serif;
+    }
+
+    .quote-box footer {
+      color: #6e3b3b;
+      font-size: 0.875rem;
+    }
+
+    /* Footer */
+    .site-footer {
+      background: #311b0b;
+      color: #f8f1e3;
+      padding: 2rem 0;
+      width: 100%;
+    }
+
+    .site-footer a {
+      color: #ffe5b4;
+      text-decoration: none;
+    }
+
+    .site-footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      .navbar-brand h1 {
+        font-size: 1rem;
+      }
+
+      .bg-philosophy {
+        font-size: 1em;
+      }
+
+      .teacher-bio ul {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img id="logo-img" src="images/logo.jpg" alt="Sarigama Bharathi logo">
+      <div class="brand-text">
+        <h1>SARIGAMA BHARATHI®</h1>
+        <p>School of Music, Udupi</p>
+      </div>
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav2">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="nav2">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+        <li class="nav-item"><a class="nav-link active" href="menu-categories.html">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="single-category.html">Events</a></li>
+        <li class="nav-item"><a class="nav-link" href="https://www.youtube.com/@SarigamaBharathiUdupi" target="_blank">YouTube</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- MAIN CONTENT -->
+<main class="container my-5">
+
+  <header class="text-center mb-4">
+    <h1 class="display-6 mb-2" data-aos="fade-down" style="font-family: 'Lora', serif;
+  font-weight: 700;
+  color: #5e2129;">Learn and Enjoy — Our Approach</h1>
+    <p class="lead mb-0" data-aos="fade-up" style="font-style: italic;">"We guide students to discover their musical voice with compassion, discipline and modern pedagogy."</p>
+  </header>
+
+  <!-- Philosophy Section -->
+  <section class="row g-4">
+    <div class="col-md-8 mx-auto">
+      <article class="bg-philosophy animate__animated animate__fadeInUp" data-aos="fade-up">
+        <h3>Our Philosophy</h3>
+        <p>Sarigama Bharathi Music School, Parkala Udupi, has been a beacon of cultural learning for the past <strong>25 years</strong>. This institution has not only provided high-quality music education, but also created hundreds of music enthusiasts across Udupi and beyond.</p>
+        <p>More than just teaching, the school has offered students performance opportunities, honored local talents, and built a nurturing space for the growth of Indian art forms.</p>
+        <p>Alongside music, we offer <em>Yakshagana, Classical dance, Harikatha, bhajans, and Vedic studies</em> — bringing students close to the <strong>cultural richness</strong> of Indian heritage.</p>
+        <p>The institution continues to grow with the <strong>blessings of the community</strong>, inspiring new generations of artists.</p>
+
+        <h4>What we offer</h4>
+        <ul>
+          <li>Classical vocal training (Carnatic)</li>
+          <li>Performance workshops & recitals</li>
+          <li>Customized learning plans for children and adults</li>
+        </ul>
+
+        <h4>Our Faculty</h4>
+        <p>Experienced performers and educators who encourage creative expression and musical discipline.</p>
+      </article>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="col-md-4">
+      <div class="card p-3 mb-3" data-aos="fade-left"  style="background-color: #fff5ea;
+      border-left: 4px solid #a0522d;">
+        <h5>Contact</h5>
+        <p><strong>Phone:</strong> <a href="tel:+919964140601">+91 99641 40601</a></p>
+        <p><strong>Email:</strong> <a href="mailto:sarigamabharathi@gmail.com">sarigamabharathi@gmail.com</a></p>
+        <p><strong>Location:</strong> Parkala, Udupi</p>
+      </div>
+
+      <div class="card p-3 mb-3 teacher-bio" data-aos="fade-left" data-aos-delay="100" style="background-color: #fff5ea;
+      border-left: 4px solid #a0522d;">
+        <h5>About the Teacher</h5>
+        <ul>
+          <li>Trained in Carnatic classical music under several gurus for over 15 years</li>
+          <li>Regular performer and teacher with experience in student mentorship</li>
+          <li>Focuses on both theory and practice of ragas, talas and compositions</li>
+        </ul>
+      </div>
+
+      <blockquote class="quote-box" data-aos="zoom-in" data-aos-delay="150">
+        "ಸಂಗೀತದಲ್ಲಿ ಸಮರ್ಪಣೆಯೊಂದಿಗೆ ಸಾಧನೆ ಮಾಡಿದರೆ, ಅದು ಕೇವಲ ಕಲೆ ಅಲ್ಲ, ಸಾಧನೆಯ ಮಾರ್ಗವೂ ಆಗಬಹುದು."
+        <footer>— ಶ್ರೀಮತಿ ಸುಧಾ ಹೆಗ್ಡೆ</footer>
+      </blockquote>
+    </aside>
+  </section>
+
+  <!-- Teacher Bio Section -->
+<section class="teacher-bio mt-5">
+  <div class="row align-items-start g-4">
+    <!-- Teacher Image & Info -->
+    <div class="col-md-4 text-center" data-aos="fade-right" data-aos-delay="100">
+      <div class="card p-3 shadow-sm h-100" style="display: flex; justify-content: center; align-items: center; background-color: #fff5ea;
+      border-left: 4px solid #a0522d;">
+        <img src="images/uma.jpg" alt="Uma Shankari" class="img-fluid rounded mb-3" style="max-width: 250px;">
+        <h3 class="mb-1">Uma Shankari K</h3>
+        <p class="text-muted mb-0">Founder Director — Sarigama Bharathi®</p>
+      </div>
+    </div>
+
+    <!-- Biography & Awards -->
+    <div class="col-md-8" data-aos="fade-left" data-aos-delay="300" >
+      <div class="card p-4 shadow-sm h-100 " style="background-color: #fff5ea;
+      border-left: 4px solid #a0522d;">
+        <h4 class="mb-3">About Uma Shankari</h4>
+        <ul class="mb-4">
+          <li>Founder Director, Sarigama Bharathi School of Music, Manipal (Silver Jubilee 1999–2024)</li>
+          <li>Organizes Carnatic concerts & workshops with eminent artists</li>
+          <li>Performs in concerts and a music guru</li>
+          <li>Law Graduate, but dedicated to music</li>
+          <li>Disciple of Vidwan Madhuru P. Balasubrahmanyam</li>
+          <li>Students excel in competitions & win CCRT scholarships</li>
+          <li>Secretary, Raga Dhana Udupi ® since 2014</li>
+        </ul>
+
+        <h5 class="mb-2">Awards & Recognitions</h5>
+        <ul>
+          <li>Best Music Teacher – Rotary Club (2006 & 2015)</li>
+          <li>Kalashri – Shri Mahadev Samskrithika Parathishtana (2010)</li>
+          <li>Sangeetha Saraswathi – Rotary Club Manipal Hills (2012)</li>
+          <li>Swara Samrajni – Lions Club Udupi (2016)</li>
+          <li>Lalitha Kala Suma – Rama Lalitha Kala Mandira, Bangalore (2019)</li>
+          <li>Bharatha Prashasthi – Radhakrishna Nrithya Nikethana, Udupi (2022)</li>
+          <li>Udupi Jilla Kannada Sahithya Parishath – Contribution to Music (2023)</li>
+          <li>A Ishwarya award – Mani Krishnaswamy Academy (2025)</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Programs Section -->
+<section class="mt-5" style="margin-bottom: 20px;">
+  <h3 class="mb-4 text-center" data-aos="fade-up">Programs</h3>
+  <div class="row g-4">
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
+      <div class="card program-card p-4 h-100 bg-white shadow-sm border-0">
+        <h5 class="mb-2">One-on-One Lessons</h5>
+        <p class="mb-0">Tailored lessons with clear milestones — ideal for focused progress.</p>
+      </div>
+    </div>
+    <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
+      <div class="card program-card p-4 h-100 bg-white shadow-sm border-0">
+        <h5 class="mb-2">Group Workshops</h5>
+        <p class="mb-0">Interactive workshops and ensemble practice for stage experience.</p>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<!-- FOOTER -->
+<footer class="site-footer text-center mt-auto">
+  <div class="container">
+    <p class="mb-0">© 2025 Sarigama Bharathi Music School, Udupi</p>
+    <small>Made with ♥ by Sarigama Bharathi</small>
+  </div>
+</footer>
+
+<!-- JS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({
+    duration: 800,
+    once: true
+  });
+</script>
+
+</body>
+</html>
